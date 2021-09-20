@@ -95,14 +95,14 @@ fi
 ```
 
 ## Installation
-There exist to distro specific packages (yet). Use the rust stable toolchain to build the binary and copy to a folder part of `$PATH`:
+There exist to distro specific packages (yet). Use the rust stable toolchain to build the binary and copy the output to a folder part of `$PATH`:
 ```sh
 # PWD: root of this repository
 cargo build --release
 cp ./target/release/open-url <PATH-location>
 ```
 
-The following samples demonstrate how to register `open-url` as default handler for `x-scheme/http(s)` requests:
+The following samples demonstrate how to register `open-url` as the default handler for `x-scheme/http(s)` requests:
 ```ini
 # ~/.local/share/applications/http.desktop
 [Desktop Entry]
