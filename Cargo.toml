@@ -1,0 +1,17 @@
+[package]
+edition = "2018"
+name = "open-url"
+version = "0.1.0"
+[dependencies]
+clap = "*"
+color-eyre = "*"
+eyre = "*"
+log = "*"
+loggerv = "*"
+regex = "*"
+toml = "*"
+xdg = "*"
+
+[dependencies.serde]
+features = ["derive"]
+version = "1.0"
