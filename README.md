@@ -104,7 +104,7 @@ $BROWSER "$1"
 ```
 
 ## Installation
-There exist to distro specific packages (yet). Use the rust stable toolchain to build the binary and copy the output to a folder part of `$PATH`:
+There exist no distro-specific packages (yet). Use the rust stable toolchain to build the binary and copy the output to a folder part of `$PATH`:
 ```sh
 # PWD: root of this repository
 cargo build --release
