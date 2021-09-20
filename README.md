@@ -3,7 +3,9 @@
 ## Description
 A small tool for managing custom handlers when opening URLs following a given pattern.
 
-This tool can be used as a default handler of `x-scheme-handler/http(s)` requests, e.g. by creating a custom `.desktop` file and registering it in `~/.config/mimeapps.list`. This tool may come handy when trying to open URLs to files (e.g. on GoogleDrive or other cloud storages) locally whenever possible/synced to local disk.
+This tool can be used as a default handler of `x-scheme-handler/http(s)` requests, e.g. by creating a custom `.desktop` file and registering it in `~/.config/mimeapps.list`.
+
+As an example, this project may come handy when trying to open URLs to files (e.g. on GoogleDrive or other cloud storages) locally whenever possible/synced to local disk.
 
 ## Usage
 ```sh
