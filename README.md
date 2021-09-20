@@ -96,6 +96,13 @@ else
 fi
 ```
 
+The next code block contains an example for the `_default` script, which must exist. It expects `$BROWSER` to be set to the default browser, such as `/usr/bin/firefox`:
+```sh
+#!/usr/bin/env sh
+
+$BROWSER "$1"
+```
+
 ## Installation
 There exist to distro specific packages (yet). Use the rust stable toolchain to build the binary and copy the output to a folder part of `$PATH`:
 ```sh
