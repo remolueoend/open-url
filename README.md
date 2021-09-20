@@ -93,3 +93,30 @@ else
     exit 1
 fi
 ```
+
+## Installation
+There exist to distro specific packages (yet). Use the rust stable toolchain to build the binary and copy to a folder part of `$PATH`:
+```sh
+# PWD: root of this repository
+cargo build --release
+cp ./target/release/open-url <PATH-location>
+```
+
+The following samples demonstrate how to register `open-url` as default handler for `x-scheme/http(s)` requests:
+```ini
+# ~/.local/share/applications/http.desktop
+[Desktop Entry]
+Type=Application
+Name=Http Browser
+Exec=<absolute-path-to-open-url> %U
+```
+
+```ini
+# ~/.config/mimeapps.list
+[Default Applications]
+# ...
+x-scheme-handler/http=http.desktop
+x-scheme-handler/https=http.desktop
+# ...
+```
+Run `update-mime-database` after updating one of the files above.
